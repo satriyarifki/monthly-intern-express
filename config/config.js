@@ -3,9 +3,10 @@ module.exports = {
   development: {
     username: "root",
     password: null,
-    database: "database_development",
+    database: "monthly_report_intern",
     host: "127.0.0.1",
     dialect: "mysql",
+    timezone: "+07:00",
   },
   test: {
     username: "root",
