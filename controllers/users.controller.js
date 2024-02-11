@@ -17,3 +17,12 @@ exports.index = async (req, res) => {
 		return res.status(500).json({ error: e.message });
 	}
 };
+exports.indexRole = async (req, res) => {
+	try {
+		const response = await users_role.findAll();
+
+		res.status(200).json(response);
+	} catch (e) {
+		return res.status(500).json({ error: e.message });
+	}
+};
