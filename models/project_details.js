@@ -27,6 +27,10 @@ module.exports = function (sequelize, DataTypes) {
         type: DataTypes.STRING(200),
         allowNull: true,
       },
+      status: {
+				type: DataTypes.ENUM(['Undone', 'Ongoing', 'Done']),
+				defaultValue: 'User',
+			},
       doc: {
         type: DataTypes.STRING(100),
         allowNull: true,
