@@ -1,6 +1,7 @@
 const Sequelize = require("sequelize");
 module.exports = function (sequelize, DataTypes) {
-  return sequelize.define(
+  const Projects = sequelize.define('projects', { timestamps: true });
+  const Project_details = sequelize.define(
     "project_details",
     {
       id: {
@@ -50,4 +51,6 @@ module.exports = function (sequelize, DataTypes) {
       ],
     }
   );
+  Project_details.belongsTo(Projects)
+  return Project_details
 };

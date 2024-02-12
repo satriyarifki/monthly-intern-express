@@ -1,6 +1,7 @@
 const Sequelize = require('sequelize');
-module.exports = function(sequelize, DataTypes) {
-  const Projects = sequelize.define('projects', {timestamps:true})
+
+module.exports = function (sequelize, DataTypes) {
+  const Projects = sequelize.define('projects', { timestamps: true });
   const Users = sequelize.define('users_role', {
     id: {
       autoIncrement: true,
