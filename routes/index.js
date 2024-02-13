@@ -27,7 +27,10 @@ router.delete('/project-details/:id', projectDetailsController.delete);
 
 // Users
 router.get('/users', usersController.index);
-router.get('/users-role', usersController.indexRole);
+router.get('/users-role', usersController.indexUserRole);
+router.post('/users-role', usersController.storeUserRole);
+router.delete('/users-role/:id', usersController.deleteUserRole);
+router.get('/roles', usersController.indexRoles);
 
 // Department
 router.get('/departments', departmentsController.index);
