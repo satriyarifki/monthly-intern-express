@@ -3,7 +3,8 @@ module.exports = function(sequelize, DataTypes) {
   return sequelize.define('users_added', {
     lg_nik: {
       type: DataTypes.STRING(30),
-      allowNull: false
+      allowNull: false,
+      primaryKey: true
     },
     lg_name: {
       type: DataTypes.STRING(255),

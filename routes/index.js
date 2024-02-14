@@ -29,6 +29,7 @@ router.delete('/project-details/:id', projectDetailsController.delete);
 router.get('/users', usersController.index);
 router.get('/users-role', usersController.indexUserRole);
 router.post('/users-role', usersController.storeUserRole);
+router.post('/users', usersController.storeNewUser);
 router.delete('/users-role/:id', usersController.deleteUserRole);
 router.get('/roles', usersController.indexRoles);
 
